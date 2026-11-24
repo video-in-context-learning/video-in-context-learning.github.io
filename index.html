@@ -1131,46 +1131,14 @@ img, video {
   padding: 20px 0 6px;
 }
 
-.qual-oneshot-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px 16px;
-  flex-wrap: wrap;
-  margin: 0 0 18px;
-}
-
 .qual-oneshot-heading {
   font-size: clamp(1.45rem, 2.5vw, 1.85rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.22;
-  margin: 0;
+  margin: 0 0 18px;
   color: var(--ink);
   text-align: left;
-}
-
-.qual-download-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 12px;
-  font-size: 0.78rem;
-  font-weight: 500;
-  line-height: 1.3;
-  color: var(--ink-2);
-  background: var(--bg);
-  border: 1px solid var(--line-strong);
-  border-radius: 6px;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: border-color 0.14s ease, color 0.14s ease, background 0.14s ease;
-}
-
-.qual-download-btn:hover {
-  border-color: var(--ink);
-  color: var(--ink);
-  background: #f9fafb;
 }
 
 .category-group {
@@ -3403,13 +3371,7 @@ footer.site-footer {
       </div>
 
       <div class="highlights-block" id="qualitative-examples" aria-label="Qualitative examples: one-shot (single visual reference)">
-        <div class="qual-oneshot-head">
-          <h2 class="qual-oneshot-heading">Qualitative examples: one-shot (single visual reference)</h2>
-          <a class="qual-download-btn" href="assets/qualitative-examples.zip" download="qualitative-examples.zip" title="Download all qualitative examples (inputs, in-context references, and generated outputs)">
-            <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v8M4.6 7.4L8 10.8l3.4-3.4M2.5 13.2h11"/></svg>
-            Download all (.zip, 34 MB)
-          </a>
-        </div>
+        <h2 class="qual-oneshot-heading">Qualitative examples: one-shot (single visual reference)</h2>
         <div id="highlights-container"></div>
       </div>
 
@@ -6632,4 +6594,3 @@ window.TABLE1_DATA = {"i2i":[{"across":"separate","within":"output-only","editin
   </script>
 </body>
 </html>
-
