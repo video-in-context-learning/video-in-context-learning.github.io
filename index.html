@@ -5479,22 +5479,6 @@ window.TABLE1_DATA = {"i2i":[{"across":"separate","within":"output-only","editin
   const HIGHLIGHT_PERCEPTION = [
     { dir: 'one-shot/perception/mice-tracking', title: 'Tracking: mice', prompt: 'Perform tracking as in @reference.png (each animal in a different tracking color)', dark: false },
     { dir: 'one-shot/perception/centipede-tracking', title: 'Tracking: centipede (cross-species generalization)', prompt: 'Track the centipedes as in @reference.png, making sure that each and every leg is tracked at all times.', dark: false },
-    { dir: 'one-shot/perception/pose-estimation-skater', title: 'Pose estimation: figure skater', prompt: 'Perform pose estimation on the video by adding a pose tracking overlay as in @reference.png', dark: false },
-    { dir: 'one-shot/perception/chimera-tracking', title: 'Pose estimation: chimera (cross-species generalization)', prompt: 'Perform pose estimation on the video by adding a pose tracking overlay as in @reference.png', dark: false },
-    { dir: 'one-shot/perception/hand-tracking', title: 'Hand tracking', prompt: 'Perform hand tracking based on the layout shown in @reference.png. The rest of the video is kept the same.', dark: false },
-    { dir: 'one-shot/perception/platypus-tracking', title: 'Hand tracking (cross-species generalization)', prompt: 'Perform hand tracking on the platypus\'s webbed feet based on the layout shown in @reference.png, keeping the rest of the video the same.', dark: false },
-    { dir: 'one-shot/perception/video-segmentation', title: 'Video object segmentation', meta: 'DAVIS 2017', prompt: 'Edit the video to segment the man in red, the helicopter in green, and the background in black, as shown in @reference.png.', dark: true },
-    {
-      dir: 'few-shot-tasks/surface-normal',
-      title: 'Surface normal estimation',
-      meta: 'MPI Sintel',
-      prompt: 'Create the video in the style of the following example: @reference.png. The output should be a video of surface normals. The output video should have the same camera motion and scene content as the input video.',
-      refSrc: 'assets/few-shot-tasks/surface-normal/ref.jpg',
-      inputSrc: 'assets/few-shot-tasks/surface-normal/input.mp4',
-      pairSrc: 'assets/few-shot-tasks/surface-normal/pair_omni_k1.mp4',
-      aspect: '640 / 272',
-      dark: true,
-    },
     {
       dir: 'few-shot-tasks/depth',
       title: 'Monocular depth estimation',
@@ -5506,6 +5490,23 @@ window.TABLE1_DATA = {"i2i":[{"across":"separate","within":"output-only","editin
       aspect: '640 / 272',
       dark: true,
     },
+    {
+      dir: 'few-shot-tasks/surface-normal',
+      title: 'Surface normal estimation',
+      meta: 'MPI Sintel',
+      prompt: 'Create the video in the style of the following example: @reference.png. The output should be a video of surface normals. The output video should have the same camera motion and scene content as the input video.',
+      refSrc: 'assets/few-shot-tasks/surface-normal/ref.jpg',
+      inputSrc: 'assets/few-shot-tasks/surface-normal/input.mp4',
+      pairSrc: 'assets/few-shot-tasks/surface-normal/pair_omni_k1.mp4',
+      aspect: '640 / 272',
+      dark: true,
+    },
+    { dir: 'one-shot/perception/pose-estimation-skater', title: 'Pose estimation: figure skater', prompt: 'Perform pose estimation on the video by adding a pose tracking overlay as in @reference.png', dark: false },
+    { dir: 'one-shot/perception/chimera-tracking', title: 'Pose estimation: chimera (cross-species generalization)', prompt: 'Perform pose estimation on the video by adding a pose tracking overlay as in @reference.png', dark: false },
+    { dir: 'one-shot/perception/hand-tracking', title: 'Hand tracking', prompt: 'Perform hand tracking based on the layout shown in @reference.png. The rest of the video is kept the same.', dark: false },
+    { dir: 'one-shot/perception/platypus-tracking', title: 'Hand tracking (cross-species generalization)', prompt: 'Perform hand tracking on the platypus\'s webbed feet based on the layout shown in @reference.png, keeping the rest of the video the same.', dark: false },
+    { dir: 'one-shot/perception/thermal-infrared', title: 'Thermal infrared simulation', prompt: 'Transform this video into a thermal infrared view matching the color palette and temperature scale shown in @reference.png, keeping the motion and geometry of the video the same.', dark: true },
+    { dir: 'one-shot/perception/video-segmentation', title: 'Video object segmentation', meta: 'DAVIS 2017', prompt: 'Edit the video to segment the man in red, the helicopter in green, and the background in black, as shown in @reference.png.', dark: true },
   ];
 
   const HIGHLIGHT_REASONING = [
